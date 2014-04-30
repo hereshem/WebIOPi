@@ -1,22 +1,34 @@
 WebIOPi
 =======
 
-An experiment for Raspberry pi
+Raspberry Pi GPIO interface with web
 
 
 
-clone repository:               $ git clone https://github.com/hereshem/WebIOPi.git
+clone repository:
+    $ git clone https://github.com/hereshem/WebIOPi.git
 
-go to folder:                   $ cd WebIOPi/
+go to folder:
+    $ cd WebIOPi/
 
-now compile: 						        $ sudo ./setup.sh
+now compile:
+    $ sudo ./setup.sh
 
 
 ..will take some time to complete..
 
 
-to start WebIOPi simply run :		$ sudo webiopi
+to start WebIOPi simply run :
+    $ sudo webiopi
+    
+start WebIOPi in background:
+    $ sudo /etc/init.d/webiopi start
+    
+start WebIOPi at boot:
+    $ sudo update-rc.d webiopi defaults
 
-start WebIOPi in background: 		$ sudo /etc/init.d/webiopi start
+Now, In browser type http://<raspberrypi.ip>:8000
 
-start WebIOPi at boot:				  $ sudo update-rc.d webiopi defaults
+Default login details
+    User Name : webiopi
+    Password : raspberry
